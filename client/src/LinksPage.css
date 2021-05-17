@@ -1,0 +1,204 @@
+.addButton {
+  padding: 10px 35px;
+  border-radius: 25px;
+  background-blend-mode: black;
+  cursor: pointer;
+  color: rgb(126, 125, 125);
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+.addButton:hover {
+  background: black;
+  cursor: pointer;
+  color: rgb(255, 247, 247);
+}
+
+
+
+.table_container {
+  margin-left: 250px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+#side-checkbox {
+  display: none;
+}
+.side-panel {
+  position: fixed;
+  visibility: visible;
+  overflow-y: scroll;
+  top: 0;
+  left: -500px;
+  background: #337ab7;
+  transition: all 0.5s;
+  width: 500px;
+  height: 100vh;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 150px 20px;
+}
+.side-title {
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  border-bottom: 2px solid #bfe2ff;
+}
+/* Оформление кнопки на странице */
+.side-button-1-wr {
+  text-align: center; /* Контейнер для кнопки, чтобы было удобнее ее разместить */
+}
+.side-button-1 .side-b {
+  right: -1000px;
+  margin-top: 20px;
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 12px 30px;
+  width: 200px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', Тahoma, sans-serif;
+  background: #33b750;
+  cursor: pointer;
+  border: 2px solid #3293e2;
+  border-radius: 30px;
+}
+.side-button-1 .side-b:hover,
+.side-button-1 .side-b:active,
+.side-button-1 .side-b:focus {
+  color: #fff;
+}
+.side-button-1 .side-b:after,
+.side-button-1 .side-b:before {
+  position: absolute;
+  height: 4px;
+  left: 350px;
+  bottom: -6px;
+  content: '';
+  transition: all 280ms ease-in-out;
+  width: 0px;
+}
+.side-button-1 .side-open:after,
+.side-button-1 .side-open:before {
+  background: rgb(255, 0, 0);
+}
+.side-button-1 .side-close:after,
+.side-button-1 .side-close:before {
+  background: red;
+}
+.side-button-1 .side-b:before {
+  top: -6px;
+}
+.side-button-1 .side-b:hover:after,
+.side-button-1 .side-b:hover:before {
+  width: 150px;
+  left: 25px;
+
+  border-radius: 30px;
+}
+/* Переключатели кнопки 1 */
+.side-button-1 .side-close {
+  display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+  display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+  display: block;
+}
+#side-checkbox:checked + .side-panel {
+  left: 0;
+}
+/* Оформление кнопки на панеле */
+.side-button-2 {
+  font-size: 50px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  right: 15px;
+  cursor: pointer;
+  transform: rotate(45deg);
+  color: #bfe2ff;
+  transition: all 280ms ease-in-out;
+}
+.side-button-2:hover {
+  transform: rotate(45deg) scale(1.1);
+  color: #fff;
+}
+.show-info {
+  position: absolute;
+  top: 11%;
+  left: 2%;
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  border-radius: 25px;
+}
+.show-info:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 21px;
+  padding: 10px 17px;
+}
+
+.flip-card {
+  border-radius: 28px;
+  margin-top: 25px;
+  perspective: 1000px;
+  height: 500px;
+  
+}
+
+
+
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(103, 103, 131);
+  border-radius: 30px;
+}
+
+.flip-card-whereform {
+  background-color: blue;
+  z-index: 10000;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  padding: 10px 15px;
+}
+.flip-card-inner {
+  height: 200px;
+  width: 400px;
+  border-radius: 30px;
+  background-color: black;
+  color: rgb(253, 253, 253);
+  margin-top: 40px;
+  border:coral 2px solid;
+  font-size: 15px;
+  padding: 15px 20px;
+}
+.deleteButton{  
+  position: absolute;
+  padding: 2px 35px;
+  border-radius: 25px;
+  background-blend-mode: rgb(255, 255, 255);
+  cursor: pointer;
+  color: rgb(126, 125, 125);
+  font-size: 15px;
+  transition: 0.3s linear;
+  text-transform: uppercase;
+}
+.deleteButton:hover {
+  background: rgb(62, 73, 32);
+  cursor: pointer;
+  color: rgb(253, 253, 253);
+}
